@@ -13,6 +13,7 @@ function deleteFromObjectByKey(object, key){
   return newObj;
 }
 function deleteFromObjectByKey(object, key){
-delete object[key]
-return  object
+  var clone = Object.assign({}, object);
+    delete clone[key];
+    return clone;
 }
