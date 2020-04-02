@@ -13,6 +13,6 @@ function deleteFromObjectByKey(object, key){
   return newObj;
 }
 function deleteFromObjectByKey(object, key){
-delete object.key
+delete object[key]
 return  object 
 }
